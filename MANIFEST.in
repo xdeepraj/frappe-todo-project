@@ -1,0 +1,3 @@
+include README.md
+include license.txt
+recursive-include todo_app *.py *.json *.html *.css *.js

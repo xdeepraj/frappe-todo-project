@@ -4,6 +4,12 @@ app_publisher = "deepraj"
 app_description = "first app"
 app_email = "support@gmail.com"
 app_license = "mit"
+fixtures = [
+    "Client Script",
+    "Custom Field",
+    "Property Setter",
+    "List View Settings"
+]
 
 # Apps
 # ------------------

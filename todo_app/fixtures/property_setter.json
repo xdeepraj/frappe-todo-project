@@ -1,0 +1,50 @@
+[
+ {
+  "default_value": null,
+  "doc_type": "Task",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "status",
+  "is_system_generated": 1,
+  "modified": "2025-06-08 15:16:13.161623",
+  "module": null,
+  "name": "Task-status-in_list_view",
+  "property": "in_list_view",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Task",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "due_date",
+  "is_system_generated": 1,
+  "modified": "2025-06-08 15:16:13.211595",
+  "module": null,
+  "name": "Task-due_date-in_list_view",
+  "property": "in_list_view",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Task",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "priority",
+  "is_system_generated": 1,
+  "modified": "2025-06-08 15:16:13.238232",
+  "module": null,
+  "name": "Task-priority-in_list_view",
+  "property": "in_list_view",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ }
+]

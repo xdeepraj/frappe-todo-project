@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Task",
+  "enabled": 1,
+  "modified": "2025-06-08 15:04:03.723479",
+  "module": null,
+  "name": "task_list_mark_done",
+  "script": "\nfrappe.listview_settings['Task'] = {\n    onload(listview) {\n        listview.page.add_inner_button('Mark as Done', () => {\n            const selected = listview.get_checked_items();\n            if (!selected.length) {\n                frappe.msgprint('Please select at least one task.');\n                return;\n            }\n\n            selected.forEach(task => {\n                frappe.call({\n                    method: \"frappe.client.set_value\",\n                    args: {\n                        doctype: \"Task\",\n                        name: task.name,\n                        fieldname: \"status\",\n                        value: \"Done\"\n                    }\n                });\n            });\n\n            frappe.msgprint('Selected tasks marked as Done.');\n            listview.refresh();\n        });\n    }\n};\n",
+  "view": "List"
+ }
+]
